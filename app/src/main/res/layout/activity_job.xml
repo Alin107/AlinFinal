@@ -5,14 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".job_Activity">
+    android:background="#BEBDB5"
+    tools:context="JobActivity">
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="320dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="196dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@mipmap/ic_job_foreground" />
@@ -21,9 +22,9 @@
         android:id="@+id/etwelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="welcome"
+        android:text="WELCOME TO "
         android:textColor="#1F272C"
         android:textSize="50dp"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="415dp" />
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="126dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

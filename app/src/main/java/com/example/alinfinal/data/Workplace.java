@@ -4,16 +4,16 @@ package com.example.alinfinal.data;
  */
 public class Workplace {
     /** معرف مكان العمل */
-    private String id;
+    protected String id;
 
     /** اسم مكان العمل */
-    private String name;
+    protected String name;
 
     /** الموقع الجغرافي لمكان العمل */
-    private String location;
+    protected String location;
 
     /** وصف مكان العمل */
-    private String description;
+    protected String description;
 
     /**
      * منشئ فئة Workplace.
