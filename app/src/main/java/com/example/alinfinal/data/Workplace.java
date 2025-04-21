@@ -4,13 +4,13 @@ package com.example.alinfinal.data;
  */
 public class Workplace {
     /** معرف مكان العمل */
-    protected String id;
+    protected String idPlace;
 
     /** اسم مكان العمل */
-    protected String name;
+    protected String namePlace;
 
     /** الموقع الجغرافي لمكان العمل */
-    protected String location;
+    protected String locationPlace;
 
     /** وصف مكان العمل */
     protected String description;
@@ -23,9 +23,9 @@ public class Workplace {
      * @param description وصف مكان العمل
      */
     public Workplace(String id, String name, String location, String description) {
-        this.id = id;
-        this.name = name;
-        this.location = location;
+        this.idPlace = idPlace;
+        this.namePlace = namePlace;
+        this.locationPlace = locationPlace;
         this.description = description;
     }
 
@@ -33,7 +33,7 @@ public class Workplace {
      * @return معرف مكان العمل
      */
     public String getId() {
-        return id;
+        return idPlace;
     }
 
     /**
@@ -41,14 +41,14 @@ public class Workplace {
      * @param id معرف مكان العمل
      */
     public void setId(String id) {
-        this.id = id;
+        this.idPlace = idPlace ;
     }
 
     /**
      * @return اسم مكان العمل
      */
     public String getName() {
-        return name;
+        return namePlace;
     }
 
     /**
@@ -56,14 +56,14 @@ public class Workplace {
      * @param name اسم مكان العمل
      */
     public void setName(String name) {
-        this.name = name;
+        this.namePlace = namePlace;
     }
 
     /**
      * @return الموقع الجغرافي لمكان العمل
      */
     public String getLocation() {
-        return location;
+        return locationPlace;
     }
 
     /**
@@ -71,7 +71,7 @@ public class Workplace {
      * @param location الموقع الجغرافي
      */
     public void setLocation(String location) {
-        this.location = location;
+        this.locationPlace = locationPlace;
     }
 
     /**
@@ -94,6 +94,6 @@ public class Workplace {
      * @return تفاصيل مكان العمل كنص
      */
     public String getWorkplaceDetails() {
-        return "ID: " + id + "\nName: " + name + "\nLocation: " + location + "\nDescription: " + description;
+        return "ID: " + idPlace + "\nName: " + namePlace + "\nLocation: " + locationPlace + "\nDescription: " + description;
     }
 }

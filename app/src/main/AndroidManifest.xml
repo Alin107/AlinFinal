@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -11,31 +11,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AlinFinal"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+
+        <!-- شاشة البداية (Splash) -->
         <activity
-            android:name=".job_Activity"
-            android:exported="false" />
-        <activity
-            android:name=".addworker_Activity"
-            android:exported="false" />
-        <activity
-            android:name=".SignInActivity"
-            android:exported="false" >
+            android:name=".SplashActivity"
+            android:exported="true"> <!-- لازم true لأنو هو البداية -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".AddWorkpasActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".AddWorkpasActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+
+        <!-- باقي الواجهات -->
+        <activity android:name=".addActivity" android:exported="false" />
+        <activity android:name=".addworker_Activity" android:exported="false" />
+        <activity android:name=".SignInActivity" android:exported="false" />
+        <activity android:name=".AddWorkpasActivity" android:exported="false" />
+        <activity android:name=".MainActivity" android:exported="false" />
+
     </application>
 
 </manifest>
+
