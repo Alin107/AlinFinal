@@ -12,25 +12,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AlinFinal"
         tools:targetApi="31">
-
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
         <!-- شاشة البداية (Splash) -->
         <activity
             android:name=".SplashActivity"
             android:exported="true"> <!-- لازم true لأنو هو البداية -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- باقي الواجهات -->
-        <activity android:name=".addActivity" android:exported="false" />
-        <activity android:name=".addworker_Activity" android:exported="false" />
-        <activity android:name=".SignInActivity" android:exported="false" />
-        <activity android:name=".AddWorkpasActivity" android:exported="false" />
-        <activity android:name=".MainActivity" android:exported="false" />
-
+        </activity> <!-- باقي الواجهات -->
+        <activity
+            android:name=".selectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".addworker_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddWorkpasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
-

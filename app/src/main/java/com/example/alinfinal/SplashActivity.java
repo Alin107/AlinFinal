@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
             // الانتقال التلقائي لواجهة التطبيق الرئيسية (مثلاً JobActivity)
             new Handler().postDelayed(() -> {
-                Intent intent = new Intent(SplashActivity.this, SplashActivity.class);
+                Intent intent = new Intent(SplashActivity.this, SignInActivity.class);
                 startActivity(intent);
                 finish(); // نغلق شاشة السبلاش
             }, 2000); // 2 ثانية
