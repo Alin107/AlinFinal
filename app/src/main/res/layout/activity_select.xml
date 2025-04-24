@@ -1,29 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".selectActivity">
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center"
+    android:background="#000000"> <!-- خلفية سوداء -->
 
-    <LinearLayout
+    <!-- عنوان الشاشة -->
+    <TextView
+        android:id="@+id/selectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#EEEEEE" <!-- لون فاتح للنص -->
+    android:layout_marginBottom="40dp" />
+
+    <!-- زر Worker -->
+    <Button
+        android:id="@+id/workerButton"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:text="Worker"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#333333" <!-- رمادي غامق -->
+    android:textColor="#FFFFFF"
+    android:padding="12dp"
+    android:elevation="6dp"
+    android:letterSpacing="0.05" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+    <!-- زر Place -->
+    <Button
+        android:id="@+id/placeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Place"
+        android:backgroundTint="#333333" <!-- نفس اللون الرمادي الغامق -->
+    android:textColor="#FFFFFF"
+    android:padding="12dp"
+    android:elevation="6dp"
+    android:letterSpacing="0.05" />
+</LinearLayout>
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
-    </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
