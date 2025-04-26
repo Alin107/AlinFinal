@@ -1,116 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#121212"
-    android:padding="24dp">
+    android:background="#121212">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="24dp">
 
-        <!-- عنوان -->
+        <!-- ID -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Worker Details"
-            android:textSize="26sp"
+            android:text="ID"
             android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:layout_gravity="center"
-            android:layout_marginBottom="24dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
 
-
-        <!-- اسم العامل -->
-        <TextView
+        <EditText
+            android:id="@+id/etId"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Worker ID"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#555555"
+            android:textColorHint="#AAAAAA"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Name -->
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Name"
-            android:textColor="#CCCCCC"
-            android:textSize="16sp"
-            android:layout_marginBottom="4dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
 
-        <TextView
-            android:id="@+id/tvWorkerName"
+        <EditText
+            android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="John Doe" <!-- سيتم تحديثه ديناميكياً -->
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:layout_marginBottom="16dp"
+            android:hint="Enter Worker Name"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#555555"
+            android:textColorHint="#AAAAAA"
+            android:layout_marginBottom="16dp"/>
 
-
-        <!-- عمر العامل -->
+        <!-- Age -->
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Age"
-            android:textColor="#CCCCCC"
-            android:textSize="16sp"
-            android:layout_marginBottom="4dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
 
-
-        <TextView
-            android:id="@+id/tvWorkerAge"
+        <EditText
+            android:id="@+id/etAge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="25" <!-- سيتم تحديثه ديناميكياً -->
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="@font/montserrat_regular" />
+            android:hint="Enter Worker Age"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#555555"
+            android:textColorHint="#AAAAAA"
+            android:layout_marginBottom="16dp"/>
 
-        <!-- موقع العامل -->
+        <!-- Location -->
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Location"
-            android:textColor="#CCCCCC"
-            android:textSize="16sp"
-            android:layout_marginBottom="4dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
 
-
-        <TextView
-            android:id="@+id/tvWorkerLocation"
+        <EditText
+            android:id="@+id/etLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="New York" <!-- سيتم تحديثه ديناميكياً -->
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:layout_marginBottom="32dp"
-        android:fontFamily="@font/montserrat_regular" />
+            android:hint="Enter Worker Location"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#555555"
+            android:textColorHint="#AAAAAA"
+            android:layout_marginBottom="24dp"/>
 
-        <!-- الأزرار -->
-        <LinearLayout
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveWorker"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:weightSum="2">
-
-            <Button
-                android:id="@+id/btnEditWorker"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Edit"
-                android:backgroundTint="#03DAC5"
-                android:textColor="#000000"
-                android:layout_marginEnd="8dp"
-
-
-            <Button
-                android:id="@+id/btnBackToList"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Back to List"
-                android:backgroundTint="#888888"
-                android:textColor="#FFFFFF"
-                android:layout_marginStart="8dp"
-
-        </LinearLayout>
-
+            android:text="Save Worker"
+            android:backgroundTint="#03DAC5"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
     </LinearLayout>
-</ScrollView>
+
+</RelativeLayout>

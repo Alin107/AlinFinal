@@ -1,49 +1,44 @@
 package com.example.alinfinal.data;
+
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * تمثل فئة WorkerRepository مستودعًا لعمال التطبيق.
- */
 public class WorkerRepository {
-    private List<Worker> workers;
 
-    /**
-     * منشئ الفئة، يبدأ المستودع بقائمة فارغة من العمال.
-     */
-    public WorkerRepository() {
-        this.workers = new ArrayList<>();
+    // قائمة لتخزين جميع العمال
+    private static List<Worker> workersList = new ArrayList<>();
+
+    // إضافة عامل جديد إلى المستودع
+    public static void addWorker(Worker worker) {
+        workersList.add(worker);
     }
 
-    /**
-     * إضافة عامل جديد إلى المستودع.
-     * @param worker العامل المراد إضافته
-     */
-    public void addWorker(Worker worker) {
-        workers.add(worker);
+    // الحصول على قائمة العمال
+    public static List<Worker> getWorkers() {
+        return workersList;
     }
 
-    /**
-     * استرجاع جميع العمال من المستودع.
-     * @return قائمة بجميع العمال
-     */
-    public List<Worker> getAllWorkers() {
-        return workers;
-    }
-
-    /**
-     * البحث عن العمال بناءً على استعلام (اسم أو موقع).
-     * @param query الاستعلام المستخدم للبحث
-     * @return قائمة من العمال المطابقين للاستعلام
-     */
-    public List<Worker> searchWorkers(String query) {
-        List<Worker> result = new ArrayList<>();
-        for (Worker worker : workers) {
-            if (worker.getName().toLowerCase().contains(query.toLowerCase()) ||
-                    worker.getLocation().toLowerCase().contains(query.toLowerCase())) {
-                result.add(worker);
+    // الحصول على عامل بناءً على ID
+    public static Worker getWorkerById(String id) {
+        for (Worker worker : workersList) {
+            if (worker.getId().equals(id)) {
+                return worker;
             }
         }
-        return result;
+        return null; // إذا لم يتم العثور على العامل
     }
-}
+
+    // حذف عامل بناءً على ID
+    public static void removeWorkerById(String id) {
+        for (Worker worker : workersList) {
+            if (worker.getId().equals(id)) {
+                workersList.remove(worker);
+                break;
+            }
+        }
+    }
+
+    // تحديث بيانات العامل
+    public static void updateWorker(String id, Worker updatedWorker) {
+        for (int i = 0; i < workersList.size(); i++) {
+            if (workersList.get(i).getId().equals(id)) {

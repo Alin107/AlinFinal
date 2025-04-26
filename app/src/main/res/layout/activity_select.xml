@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:padding="32dp"
     android:gravity="center"
-    android:background="#000000"> <!-- خلفية سوداء -->
+    android:background="#000000">
 
     <!-- عنوان الشاشة -->
     <TextView
@@ -15,7 +15,7 @@
         android:text="Select"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="#EEEEEE" <!-- لون فاتح للنص -->
+        android:textColor="#EEEEEE"
     android:layout_marginBottom="40dp" />
 
     <!-- زر Worker -->
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:text="Worker"
         android:layout_marginBottom="20dp"
-        android:backgroundTint="#333333" <!-- رمادي غامق -->
+        android:backgroundTint="#333333"
     android:textColor="#FFFFFF"
     android:padding="12dp"
     android:elevation="6dp"
@@ -37,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Place"
-        android:backgroundTint="#333333" <!-- نفس اللون الرمادي الغامق -->
+        android:backgroundTint="#333333"
     android:textColor="#FFFFFF"
     android:padding="12dp"
     android:elevation="6dp"
