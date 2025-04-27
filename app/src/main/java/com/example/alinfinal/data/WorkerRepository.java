@@ -38,7 +38,6 @@ public class WorkerRepository {
         }
     }
 
-    // تحديث بيانات العامل
-    public static void updateWorker(String id, Worker updatedWorker) {
-        for (int i = 0; i < workersList.size(); i++) {
-            if (workersList.get(i).getId().equals(id)) {
+//
+}
+

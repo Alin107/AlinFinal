@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 
-public class ForgetPasswordActivity extends AppCompatActivity {
+public class ForgotPasswordActivity extends AppCompatActivity {
 
     private EditText editTextEmail;
     private Button buttonResetPassword;
@@ -33,15 +33,15 @@ public class ForgetPasswordActivity extends AppCompatActivity {
                 String email = editTextEmail.getText().toString().trim();
 
                 if (TextUtils.isEmpty(email)) {
-                    Toast.makeText(ForgetPasswordActivity.this, "Please enter your email", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ForgotPasswordActivity.this, "Please enter your email", Toast.LENGTH_SHORT).show();
                 } else {
                     // هون ممكن تبعت الإيميل لسيرفر أو تعمل أي لوجيك
-                    Toast.makeText(ForgetPasswordActivity.this, "Reset link sent to " + email, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ForgotPasswordActivity.this, "Reset link sent to " + email, Toast.LENGTH_SHORT).show();
                     // هون كمان ممكن ترجع للمستخدم على شاشة تسجيل الدخول مثلا
                 }
             }
         });
-        Intent intent = new Intent(ForgetPasswordActivity.this, selectActivity.class);
+        Intent intent = new Intent(ForgotPasswordActivity.this, selectActivity.class);
         startActivity(intent);
         finish(); // نغلق شاشة الإضافة
     }
