@@ -4,7 +4,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.alinfinal.data.Worker;
 import com.example.alinfinal.data.WorkerRepository;
 
@@ -28,6 +31,7 @@ public class addworker_Activity extends AppCompatActivity {
         // لما يكبس على زر حفظ
         btnSaveWorker.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View v) {
                 String id = etId.getText().toString().trim();
                 String name = etName.getText().toString().trim();
@@ -41,6 +45,8 @@ public class addworker_Activity extends AppCompatActivity {
                 WorkerRepository.addWorker(worker);
 
                 finish(); // نسكر الشاشة ونرجع للوراء
+                Toast.makeText(addworker_Activity.this, "Worker added successfully!", Toast.LENGTH_SHORT).show();
+
             }
         });
     }

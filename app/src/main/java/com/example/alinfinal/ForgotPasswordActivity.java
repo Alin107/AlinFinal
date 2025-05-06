@@ -41,8 +41,6 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                 }
             }
         });
-        Intent intent = new Intent(ForgotPasswordActivity.this, selectActivity.class);
-        startActivity(intent);
-        finish(); // نغلق شاشة الإضافة
+
     }
 }
