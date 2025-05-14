@@ -46,7 +46,7 @@ public class JobsAdapter extends RecyclerView.Adapter<JobsAdapter.JobViewHolder>
         public JobViewHolder(@NonNull View itemView) {
             super(itemView);
             textViewJobName = itemView.findViewById(R.id.textView_title);
-            textViewJobLocation = itemView.findViewById(R.id.textViewJobLocation);
+        //   textViewJobLocation = itemView.findViewById(R.id.textViewJobLocation);
         }
     }
 }

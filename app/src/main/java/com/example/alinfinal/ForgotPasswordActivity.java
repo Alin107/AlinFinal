@@ -42,6 +42,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                 }
             }
         });
+
         @SuppressLint("WrongViewCast") Button BackToLogin = findViewById(R.id.textView_backToLogin);
         BackToLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +52,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
         Intent intent = new Intent(ForgotPasswordActivity.this, selectActivity.class);
         startActivity(intent);
