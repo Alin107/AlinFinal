@@ -1,17 +1,14 @@
 package com.example.alinfinal;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.example.alinfinal.data.Workplace;
 import com.example.alinfinal.data.WorkplaceRepository;
@@ -19,35 +16,32 @@ import com.example.alinfinal.data.WorkplaceRepository;
 public class AddWorkpasActivity extends AppCompatActivity {
 
     private EditText editTextNamePlace, editTextLocationPlace, editTextDescriptionPlace;
-    private Button buttonSavePlace;
 
     // مستودع اماكن العمل (مؤقت حاليا داخل الاكتيفيتي، لاحقا بنعمله بشكل أفضل)
     public static WorkplaceRepository workplaceRepository = new WorkplaceRepository();
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_add_task);
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+/*
+        ViewCompat.setOnApplyWindowInsetsListener(this.<View>findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+ تعريف العناصر
+*/
 
-        // تعريف العناصر
         editTextNamePlace = findViewById(R.id.editText_namePlace);
         editTextLocationPlace = findViewById(R.id.editText_locationPlace);
         editTextDescriptionPlace = findViewById(R.id.editText_descriptionPlace);
-        buttonSavePlace = findViewById(R.id.button_savePlace);
+        Button buttonSavePlace = findViewById(R.id.button_savePlace);
 
-        buttonSavePlace.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                saveWorkplace();
-            }
-        });
+        buttonSavePlace.setOnClickListener(view -> saveWorkplace());
     }
 
     private void saveWorkplace() {
