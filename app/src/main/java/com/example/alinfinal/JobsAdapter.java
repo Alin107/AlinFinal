@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.alinfinal.R;
+import com.example.alinfinal.data.Job;
 import com.example.alinfinal.data.Workplace;
 
 import java.util.List;
@@ -17,7 +18,7 @@ public class JobsAdapter extends RecyclerView.Adapter<JobsAdapter.JobViewHolder>
 
     private List<Workplace> workplaceList;
 
-    public JobsAdapter(List<Workplace> workplaceList) {
+    public JobsAdapter(List<Job> workplaceList) {
         this.workplaceList = workplaceList;
     }
 
