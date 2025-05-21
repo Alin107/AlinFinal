@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "225958653073",
+    "project_id": "alinfinal",
+    "storage_bucket": "alinfinal.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225958653073:android:37c7cc8b65cc4940926330",
+        "android_client_info": {
+          "package_name": "com.example.alinfinal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSwHwcaL9QMP0RxCvwsp21Xc4m1_bjGLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
