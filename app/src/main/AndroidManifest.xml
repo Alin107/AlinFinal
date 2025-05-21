@@ -16,7 +16,7 @@
         android:theme="@style/Theme.AlinFinal"
         tools:targetApi="31">
         <activity
-            android:name=".data.searchActivity"
+            android:name=".searchActivity"
             android:exported="false" />
         <activity
             android:name=".ForgotPasswordActivity"
